@@ -18,11 +18,10 @@ public class CarController {
 
     @GetMapping(value = "car")
    public String printCarPage(@RequestParam(value = "count", defaultValue = "5") int count_of_car_list, Model model) {
-       System.out.println("count_of_car_list :" + count_of_car_list);
-       System.out.println();
 
        model.addAttribute("messages", "Список автомобилей");
        model.addAttribute("car_message", carService.getListCar(count_of_car_list));
+
        return "car/car";
    }
 }
