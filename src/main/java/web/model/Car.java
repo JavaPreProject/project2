@@ -6,9 +6,9 @@ import org.springframework.stereotype.Component;
 public class Car {
     private String model;
     private String series;
-    private int age;
+    private String age;
 
-    public Car(String name, String series, int age) {
+    public Car(String name, String series, String age) {
         this.model = name;
         this.series = series;
         this.age = age;
@@ -17,7 +17,7 @@ public class Car {
     public Car() {
     }
 
-    public int getAge() {
+    public String getAge() {
         return age;
     }
 
