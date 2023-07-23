@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User info</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+<div>
+
+  <p th:text="${user.getName()}">VALUE</p>
+  <p th:text="${user.getLastName()}">VALUE</p>
+  <p th:text="${user.getAge()}">VALUE</p>
+  <form th:method="DELETE" th:action="@{/users/{id}(id=${user.getId()})}">
+    <input type="submit" th:value="DELETE"/>
+  </form>
+
+  <a th:href="@{/users/{id}/edit(id=${user.getId()})}">Edit User</a>
+
+</div>
+</body>
+</html>
