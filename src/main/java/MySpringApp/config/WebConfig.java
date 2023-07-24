@@ -1,4 +1,4 @@
-package MySpringApp.web.config;
+package MySpringApp.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
