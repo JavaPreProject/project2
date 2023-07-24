@@ -1,4 +1,4 @@
-package MySpringApp.web.controller;
+package MySpringApp.controller;
 
 import MySpringApp.models.User;
 import MySpringApp.service.UserService;
