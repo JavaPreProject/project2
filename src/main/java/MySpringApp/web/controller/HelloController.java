@@ -22,7 +22,7 @@ public class HelloController {
 		this.userService = userService;
 	}
 
-	@GetMapping(value = "/")
+	@GetMapping("/")
 	public String printWelcome(Model model) {
 		List<String> messages = new ArrayList<>();
 
