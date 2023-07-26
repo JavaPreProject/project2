@@ -13,8 +13,8 @@ public class UserDaoImpl implements UserDao{
     private EntityManager entityManager;
 
     @Override
-    public void addUser(String name, String lastName, int age) {
-        entityManager.persist(new User(name,lastName,age));
+    public void addUser(User user) {
+        entityManager.persist(user);
     }
 
     @Override

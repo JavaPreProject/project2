@@ -20,8 +20,8 @@ public class UserServiceImpl implements UserService {
 
     @Transactional
     @Override
-    public void addUser(String name, String lastname, int age) {
-        userDao.addUser(name, lastname, age);
+    public void addUser(User user) {
+        userDao.addUser(user);
     }
     @Transactional
     @Override
