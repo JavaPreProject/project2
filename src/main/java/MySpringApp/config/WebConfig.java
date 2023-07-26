@@ -114,6 +114,7 @@ public class WebConfig implements WebMvcConfigurer {
 
         return properties;
     }
+
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
 
