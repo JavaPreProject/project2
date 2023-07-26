@@ -17,13 +17,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Controller
-public class HelloController { //параметр в аннотации @PathVariable можно опустить, если имя переменной в методе совпадает с именем переменной в URL-адресе. Так же с @ModelAttribute.
+public class UserController { //параметр в аннотации @PathVariable можно опустить, если имя переменной в методе совпадает с именем переменной в URL-адресе. Так же с @ModelAttribute.
 
 
     private final UserService userService;
 
     @Autowired
-    public HelloController(UserService userService) {
+    public UserController(UserService userService) {
         this.userService = userService;
     }
 
